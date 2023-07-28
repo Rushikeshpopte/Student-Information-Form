@@ -1,0 +1,44 @@
+
+<nav class="navbar bg-warning-subtle">
+    <div class="container-fluid">
+      <a class="navbar-brand">happi</a>
+      <form class="d-flex me-5" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="contain">
+    <div style="background-color: red; border: 3px solid black; padding: 1rem;">
+
+
+      <p>welcomee parentcomponent nice tio see you again</p>
+  
+      <button (click)="sendData()"> data send</button>
+      <div>
+        <p>Data Recived from child</p>
+        <p>
+          {{acceptData}}
+        </p>
+      </div>
+    </div>
+  
+  
+  
+    <div style="background-color: red; border: 3px solid black; padding: 1rem;">
+      <app-display (dataEvent)="revicedData($event)" [comeParent]="data"></app-display>
+    </div>
+  
+  
+
+  </div>
+  
+ 
+
+<div class="divmain">
+
+      {{call}}
+
+</div>
+<app-child (callData)="missCall($event)"></app-child>

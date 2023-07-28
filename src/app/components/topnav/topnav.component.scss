@@ -1,0 +1,15 @@
+.contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.divmain{
+    width:500px;
+    height: 400px;
+    background-color: rgb(241, 157, 157);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px rgb(255, 0, 43) solid;
+    border-radius: 50%;
+}

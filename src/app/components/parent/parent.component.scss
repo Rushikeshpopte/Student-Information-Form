@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.data{
+    border: 2px rgb(255, 255, 255) solid;
+    padding: 5px ;
+    margin-top: 20px0;
+}
+
+
+.parent{
+    background-color: rgb(171, 244, 244);
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+}
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 178, 210);
+}
+.child{
+    background-color: rgb(155, 236, 179);
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+ 
+}
+.self{
+    margin-top: 2rem;
+    padding:1rem;
+    background-color: rgb(158, 180, 180);
+    border: 2px solid black;
+}

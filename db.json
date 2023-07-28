@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "article-server",
+      "author": "rushi"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products":[
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 10.99
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": 19.99
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": 7.99
+    }
+  ]
+  
+}

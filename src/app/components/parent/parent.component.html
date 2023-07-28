@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="parent">
+    <p>Parent works!</p>
+    <p>I am Rushikesh Vasntrao popate</p>
+
+    <div class="data">
+      <p>Data from child</p>
+
+      Recived data: {{ info }}
+    </div>
+    <div class="data">
+      <p>Send data from parent</p>
+      Parent Data: I am Rushikesh
+      <button class="btn" (click)="shareData()">Share Data</button>
+    </div>
+  </div>
+
+  <!-- // child to parent code sharing -->
+
+  <div class="child">
+    <app-child
+      (dataEvent)="getData($event)"
+      [childData]="parentData"
+    ></app-child>
+  </div>
+</div>
+
+<div class="self">
+  <button type="button" [disabled]="!canClick" (click)="sayMesaage()">
+    Alert
+  </button>
+
+  <p [id]="sayHelloId" [style.color]="fontColor">
+    You can set my color in the component!
+  </p>
+
+  <p>My color is {{fontColor}}</p>
+
+  <div>
+    <button (click)="onLogMe()">click here</button>
+  </div>
+</div>

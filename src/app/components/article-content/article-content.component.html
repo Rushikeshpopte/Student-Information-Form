@@ -1,0 +1,25 @@
+<div>
+    <input type="text" [(ngModel)]="someValue"/>
+        
+    <br>             
+    <br>             
+           
+    <div>
+        <button (click)="submitData()">Submit</button>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <td>Names</td>
+            </tr>
+            <tr *ngFor="let data of someValues">
+                <td>{{data}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        {{someValue}}
+    </div>
+</div> 
